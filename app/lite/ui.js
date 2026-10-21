@@ -133,7 +133,7 @@
       + `<div class="ll-score"><span>모의 계좌</span><b>${money(a.start)} → ${money(a.equity)} USDT</b>`
       + `<em class="${tone}">${ret > 0 ? '+' : ''}${ret.toFixed(2)}%</em>`
       + `<small>${a.wins}승 ${a.losses}패 · 수수료 없이 계산${open ? ` · 보유 ${open}개 — 계속 실시간 정산됩니다` : ''}</small></div>`
-      + '<p>실제 버전에서는 AI 직원 13명이 뉴스까지 읽고 각자 분석·토론해서 판정합니다.<br>Claude 또는 ChatGPT(Codex) 구독과 PC만 있으면 텔레그램 자료실에서 받아 추가 비용 없이 바로 쓸 수 있어요.</p>'
+      + '<p>실제 버전에서는 AI 직원 13명이 뉴스까지 읽고 각자 분석·토론해서 판정합니다.<br>Claude·ChatGPT 구독 없이 PC만 있으면 텔레그램 자료실에서 받아 무료로 바로 쓸 수 있어요.</p>'
       + (cfg.filesUrl ? `<a class="ll-go" href="${esc(cfg.filesUrl)}" target="_blank" rel="noopener">텔레그램 자료실에서 받기 ▶</a>` : '')
       + '<button class="ll-close" type="button" data-close>계속 구경하기</button>'
       + '</div>';
