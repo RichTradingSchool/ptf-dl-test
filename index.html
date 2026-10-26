@@ -232,6 +232,8 @@
 .real-cta{margin-top:26px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px 24px;padding:24px 28px;border-radius:24px;border:1px solid rgba(67,189,245,.35);background:linear-gradient(135deg,rgba(31,143,208,.14),rgba(12,15,22,.6) 60%)}
 .need{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
 .need b{margin-right:4px;font-size:14px;font-weight:850}
+.real-btns{display:flex;flex-wrap:wrap;gap:12px}
+.top-m{margin-left:-8px}
 .need span{height:30px;display:inline-flex;align-items:center;padding:0 12px;border-radius:99px;border:1px solid var(--line-2);background:rgba(255,255,255,.03);font-size:13.5px;color:var(--text-2);font-weight:700}
 .apply-sec{padding:24px 0}
 .dl-auto small{display:block;margin-top:6px;font-size:12px;font-weight:600;color:var(--mute)}
@@ -301,7 +303,9 @@
   .feat{padding:20px}
   .quote{padding:20px 18px}
   .real-cta{padding:20px 18px}
-  .real-cta .btn{width:100%}
+  .real-cta .btn,.real-btns{width:100%}
+  .top-cta .i,.top-m .i{display:none}
+  .top-cta,.top-m{padding:0 11px}
   .ap-grid{grid-template-columns:1fr 1fr}
   .ap-grid b{white-space:normal;font-size:16px}
   .sub-card{padding:12px 14px}
@@ -361,6 +365,7 @@ html:not(.motion) .intro{display:none}
 <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M3 12h4l2.5-6.5 5 13 2.5-6.5h4"/></symbol>
 <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
 <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></symbol>
 <symbol id="i-send" viewBox="0 0 24 24"><path d="M21 4 3 11.2l6.6 2.3M21 4l-3.8 16-7.6-6.5M21 4 9.6 13.5v5.8l3.1-3.2"/></symbol>
 <symbol id="i-news" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M7 9.2h5M7 12.5h10M7 15.8h10"/></symbol>
 <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 7.5A2.5 2.5 0 0 1 5.5 5h3.7l2.2 2.2h7.1A2.5 2.5 0 0 1 21 9.7v7.8a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5z"/></symbol>
@@ -408,6 +413,7 @@ html:not(.motion) .intro{display:none}
     <a class="logo" href="#top"><span class="mark"><canvas data-agent="ace" width="16" height="16" aria-hidden="true"></canvas></span><span class="logo-t pixel">PIXEL TRADING FLOOR</span></a>
     <nav class="main" aria-label="주요 메뉴"><a href="#framework">TradingAgents</a><a href="#how">작동 원리</a><a href="#try">직접 돌려 보기</a><a href="#real">AI 실제 버전</a><a href="#auto">자동매매</a><a href="#get">자료실</a><a href="#faq">FAQ</a></nav>
     <a class="btn gold sm top-cta" href="https://ptf-dl-staging.gksalswns29.workers.dev/get?p=pc&amp;src=pixel-trading-floor" target="_blank" rel="noopener"><svg class="i"><use href="#i-download"/></svg>다운로드</a>
+    <a class="btn ghost sm top-m" href="https://ptf-dl-staging.gksalswns29.workers.dev/get?p=mobile&amp;src=pixel-trading-floor" target="_blank" rel="noopener"><svg class="i"><use href="#i-phone"/></svg>모바일 버전</a>
   </div></header>
   <div class="ticker" aria-label="실시간 시세">
     <div class="tk-in">
@@ -630,8 +636,11 @@ html:not(.motion) .intro{display:none}
     <p>직원마다 이런 브리핑을 세 문단 안팎으로 쓰고, 토론·리스크 심사·최종 판정까지 한 편의 리포트로 남깁니다.</p>
   </figure>
   <div class="real-cta" data-rise>
-    <div class="need"><b>필요한 것</b><span>Windows PC</span></div>
-    <a class="btn tg xl" href="https://ptf-dl-staging.gksalswns29.workers.dev/get?p=pc&amp;src=pixel-trading-floor" target="_blank" rel="noopener"><svg class="i"><use href="#i-send"/></svg>PC 버전 받기 (Windows)</a>
+    <div class="need"><b>필요한 것</b><span>Windows PC</span><span>휴대폰은 모바일 버전</span></div>
+    <div class="real-btns">
+      <a class="btn tg xl" href="https://ptf-dl-staging.gksalswns29.workers.dev/get?p=pc&amp;src=pixel-trading-floor" target="_blank" rel="noopener"><svg class="i"><use href="#i-send"/></svg>PC 버전 받기 (Windows)</a>
+      <a class="btn ghost xl" href="https://ptf-dl-staging.gksalswns29.workers.dev/get?p=mobile&amp;src=pixel-trading-floor" target="_blank" rel="noopener"><svg class="i"><use href="#i-phone"/></svg>모바일 버전 바로가기</a>
+    </div>
   </div>
 </div></section>
 
@@ -676,7 +685,8 @@ html:not(.motion) .intro{display:none}
     <p class="dl-perk">Claude·ChatGPT 구독 없이도 리치 서버 AI의 분석 결과를 무료로 받아 보실 수 있습니다.</p>
     <p class="dl-perk dl-auto">거래소 API를 연동하면 AI 분석 결과를 실제 거래소 자동매매로도 이어갈 수 있습니다.<small>거래소 API 키를 직접 연동해야 쓸 수 있고, 1회씩 진입 방식·자동매매 ON/OFF 등을 선택할 수 있습니다. 투자 판단과 손실의 책임은 본인에게 있습니다.</small></p>
     <p class="req">Windows PC 기준 · Claude·ChatGPT 구독 없이 무료 · AI 분석만 쓸 때는 API 키·거래소 키 불필요</p>
-    <div class="btns" style="margin-top:22px"><a class="btn tg lg" href="https://ptf-dl-staging.gksalswns29.workers.dev/get?p=pc&amp;src=pixel-trading-floor" target="_blank" rel="noopener"><svg class="i"><use href="#i-send"/></svg>PC 버전 받기 (Windows)</a></div>
+    <div class="btns" style="margin-top:22px"><a class="btn tg lg" href="https://ptf-dl-staging.gksalswns29.workers.dev/get?p=pc&amp;src=pixel-trading-floor" target="_blank" rel="noopener"><svg class="i"><use href="#i-send"/></svg>PC 버전 받기 (Windows)</a><a class="btn ghost lg" href="https://ptf-dl-staging.gksalswns29.workers.dev/get?p=mobile&amp;src=pixel-trading-floor" target="_blank" rel="noopener"><svg class="i"><use href="#i-phone"/></svg>모바일 버전 바로가기</a></div>
+    <p class="req">휴대폰에서는 설치 없이 <b>모바일 버전 바로가기</b>로 바로 쓸 수 있고, 홈 화면에 추가하면 앱처럼 쓸 수 있습니다.</p>
   </div>
   <div class="obs" data-rise>
     <div class="ic"><svg class="i"><use href="#i-lock"/></svg></div>
