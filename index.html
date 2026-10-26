@@ -246,7 +246,8 @@
 .mob-card h3{font-size:24px;letter-spacing:-.03em;line-height:1.25;margin:14px 0 10px}
 .mob-card p{margin:0;color:var(--text-2);font-size:15px}
 .mob-feats{list-style:none;margin:14px 0 20px;padding:0;display:grid;gap:8px;font-size:14px;color:var(--text-2)}
-.mob-feats li{display:flex;gap:8px;align-items:flex-start}
+.mob-feats li{display:flex;gap:8px;align-items:flex-start;padding-left:0;counter-increment:none}
+.mob-feats li::before{content:none}
 .mob-feats .i{width:17px;height:17px;flex:none;margin-top:2px;color:var(--long)}
 .mob-card .btn{width:100%;padding:0 16px}
 .mob-phone{margin:0;padding:6px;border-radius:28px;background:#05070b;border:1px solid #2b3347;box-shadow:0 30px 60px -24px rgba(0,0,0,.9),0 0 0 4px rgba(255,255,255,.03);transform:rotate(3deg)}
